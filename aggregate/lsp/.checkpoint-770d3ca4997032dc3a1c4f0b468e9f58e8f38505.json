@@ -4,8 +4,10 @@
     "mypy/checkexpr.py",
     "mypy/checkstrformat.py",
     "mypy/plugins/attrs.py",
+    "mypy/semanal.py",
     "mypy/server/deps.py",
     "mypy/stubgen.py",
+    "mypyc/ir/ops.py",
     "mypyc/irbuild/for_helpers.py",
     "mypyc/lib-rt/CPy.h",
     "mypyc/lib-rt/base64/arch/avx/codec.c",
@@ -97,13 +99,13 @@
     "output_path": "/home/runner/work/forx/forx/storage/aggregate/lsp/770d3ca4997032dc3a1c4f0b468e9f58e8f38505.nq.gz",
     "call_sites": 55446,
     "import_statements": 6572,
-    "call_targets_resolved": 1930,
+    "call_targets_resolved": 2707,
     "import_targets_resolved": 0,
     "symbols_exported": 0,
     "external_resolved": 0,
     "dataflow_arg_to_param": 0,
     "dataflow_return_to_call": 0,
-    "errors": 7177,
+    "errors": 10155,
     "extends_clauses": 2501,
     "implements_clauses": 0,
     "import_modules_denormalized": 10127,
@@ -111,5 +113,5 @@
     "extends_class_denormalized": 2500,
     "implements_interface_denormalized": 0
   },
-  "elapsed_seconds": 14408
+  "elapsed_seconds": 14404
 }
