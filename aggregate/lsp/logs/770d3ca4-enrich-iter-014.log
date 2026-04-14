@@ -1,0 +1,75 @@
+[2026-04-14T08:25:55Z] === ENRICH ITERATION 14 START | repo=python/mypy sha=770d3ca4 ===
+[2026-04-14T08:25:55Z] [iter=14] PHASE START: enrich repo=python/mypy sha=770d3ca4 runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/770d3ca4-enrich-iter-014.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/770d3ca4997032dc3a1c4f0b468e9f58e8f38505.nq.gz
+[2026-04-14T08:26:07Z] [iter=14] Step 1: Loading AST into disk-backed store mem_mb=78 MB
+[2026-04-14T08:28:15Z] [iter=14] AST store loaded triples=12088343 load_secs=124 mem_mb=989 MB
+[2026-04-14T08:28:15Z] [iter=14] Step 2: Finding LSP targets mem_mb=989 MB
+[2026-04-14T08:28:49Z] [iter=14] LSP targets found call_sites=55446 imports=6572 extends=2501 implements=0 secs=34
+[2026-04-14T08:29:01Z] [iter=14] Loaded checkpoint partial graph triples=289700
+[2026-04-14T08:29:34Z] [iter=14] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=989 MB
+[2026-04-14T08:30:53Z] [iter=14] Position index built positions=815413 nodes_with_types=1019774 secs=79 mem_mb=2390 MB
+[2026-04-14T08:30:53Z] [iter=14] Step 3: Starting LSP resolution mem_mb=2390 MB already_completed_types=[] already_completed_files=378
+[2026-04-14T08:30:53Z] [iter=14] Resolving target type target_type=call_site count=55446
+[2026-04-14T08:30:58Z] [iter=14] HEARTBEAT target_type=call_site elapsed_min=5.0 files_done=0 resolved=0 errors=0 current=mypy/typetraverser.py
+[2026-04-14T08:33:13Z] [iter=14] HEARTBEAT target_type=call_site elapsed_min=7.3 files_done=1 resolved=0 errors=28 current=mypyc/test/test_analysis.py
+[2026-04-14T08:34:49Z] [iter=14] HEARTBEAT target_type=call_site elapsed_min=8.9 files_done=2 resolved=5 errors=48 current=test-data/unit/fixtures/async_await.pyi
+[2026-04-14T08:36:11Z] [iter=14] HEARTBEAT target_type=call_site elapsed_min=10.3 files_done=4 resolved=11 errors=65 current=mypy/test/testargs.py
+[2026-04-14T08:37:14Z] [iter=14] HEARTBEAT target_type=call_site elapsed_min=11.3 files_done=5 resolved=13 errors=78 current=test-data/pybind11_fixtures/setup.py
+[2026-04-14T08:37:48Z] [iter=14] HEARTBEAT target_type=call_site elapsed_min=11.9 files_done=8 resolved=22 errors=85 current=test-data/unit/lib-stub/collections.pyi
+[2026-04-14T08:41:25Z] [iter=14] HEARTBEAT target_type=call_site elapsed_min=15.5 files_done=12 resolved=38 errors=130 current=mypyc/crash.py
+[2026-04-14T08:42:18Z] [iter=14] HEARTBEAT target_type=call_site elapsed_min=16.4 files_done=14 resolved=52 errors=141 current=test-data/unit/plugins/magic_method.py
+[2026-04-14T08:42:52Z] [iter=14] HEARTBEAT target_type=call_site elapsed_min=16.9 files_done=16 resolved=53 errors=148 current=mypy/freetree.py
+[2026-04-14T08:43:45Z] [iter=14] HEARTBEAT target_type=call_site elapsed_min=17.8 files_done=19 resolved=77 errors=159 current=mypy/typeshed/stdlib/logging/config.pyi
+[2026-04-14T08:44:52Z] [iter=14] HEARTBEAT target_type=call_site elapsed_min=18.9 files_done=21 resolved=78 errors=173 current=test-data/unit/plugins/descriptor.py
+[2026-04-14T08:46:23Z] [iter=14] HEARTBEAT target_type=call_site elapsed_min=20.5 files_done=23 resolved=84 errors=192 current=mypy/test/testtransform.py
+[2026-04-14T08:47:21Z] [iter=14] HEARTBEAT target_type=call_site elapsed_min=21.4 files_done=24 resolved=85 errors=204 current=mypy/typeshed/stdlib/email/utils.pyi
+[2026-04-14T08:49:41Z] [iter=14] HEARTBEAT target_type=call_site elapsed_min=23.8 files_done=26 resolved=107 errors=233 current=mypy/typeshed/stdlib/trace.pyi
+[2026-04-14T08:50:24Z] [iter=14] HEARTBEAT target_type=call_site elapsed_min=24.5 files_done=35 resolved=128 errors=242 current=test-data/unit/fixtures/isinstance.pyi
+[2026-04-14T08:51:17Z] [iter=14] HEARTBEAT target_type=call_site elapsed_min=25.4 files_done=39 resolved=142 errors=253 current=mypy/typeshed/stdlib/shutil.pyi
+[2026-04-14T08:54:06Z] [iter=14] HEARTBEAT target_type=call_site elapsed_min=28.2 files_done=42 resolved=159 errors=288 current=mypyc/primitives/registry.py
+[2026-04-14T08:55:19Z] [iter=14] HEARTBEAT target_type=call_site elapsed_min=29.4 files_done=43 resolved=159 errors=303 current=mypy/typeshed/stdlib/xdrlib.pyi
+[2026-04-14T08:56:07Z] [iter=14] HEARTBEAT target_type=call_site elapsed_min=30.2 files_done=46 resolved=170 errors=313 current=mypyc/test/test_refcount.py
+[2026-04-14T08:57:00Z] [iter=14] HEARTBEAT target_type=call_site elapsed_min=31.1 files_done=47 resolved=171 errors=324 current=mypy/typevars.py
+[2026-04-14T08:57:58Z] [iter=14] HEARTBEAT target_type=call_site elapsed_min=32.1 files_done=48 resolved=178 errors=336 current=mypyc/transform/lower.py
+[2026-04-14T08:59:01Z] [iter=14] HEARTBEAT target_type=call_site elapsed_min=33.1 files_done=50 resolved=178 errors=349 current=mypy/typeshed/stdlib/unittest/mock.pyi
+[2026-04-14T09:00:23Z] [iter=14] HEARTBEAT target_type=call_site elapsed_min=34.5 files_done=53 resolved=186 errors=366 current=mypy/typeshed/stdlib/_collections_abc.pyi
+[2026-04-14T09:02:04Z] [iter=14] HEARTBEAT target_type=call_site elapsed_min=36.2 files_done=55 resolved=198 errors=387 current=mypy/typeshed/stdlib/_typeshed/__init__.pyi
+[2026-04-14T09:03:18Z] [iter=14] HEARTBEAT target_type=call_site elapsed_min=37.4 files_done=58 resolved=221 errors=402 current=mypyc/doc/conf.py
+[2026-04-14T09:04:03Z] [iter=14] HEARTBEAT target_type=call_site elapsed_min=38.1 files_done=69 resolved=288 errors=411 current=mypy/typeshed/stdlib/asyncio/runners.pyi
+[2026-04-14T09:04:56Z] [iter=14] HEARTBEAT target_type=call_site elapsed_min=39.0 files_done=73 resolved=305 errors=422 current=mypy/typeshed/stdlib/platform.pyi
+[2026-04-14T09:06:09Z] [iter=14] HEARTBEAT target_type=call_site elapsed_min=40.2 files_done=76 resolved=312 errors=437 current=mypy/typeshed/stdlib/email/message.pyi
+[2026-04-14T09:07:17Z] [iter=14] HEARTBEAT target_type=call_site elapsed_min=41.4 files_done=81 resolved=339 errors=451 current=mypy/split_namespace.py
+[2026-04-14T09:08:10Z] [iter=14] HEARTBEAT target_type=call_site elapsed_min=42.3 files_done=84 resolved=351 errors=462 current=mypy/typeshed/stdlib/_py_abc.pyi
+[2026-04-14T09:08:49Z] [iter=14] HEARTBEAT target_type=call_site elapsed_min=42.9 files_done=87 resolved=360 errors=470 current=mypy/test/testapi.py
+[2026-04-14T09:10:02Z] [iter=14] HEARTBEAT target_type=call_site elapsed_min=44.1 files_done=93 resolved=381 errors=485 current=mypyc/transform/exceptions.py
+[2026-04-14T09:12:51Z] [iter=14] HEARTBEAT target_type=call_site elapsed_min=46.9 files_done=94 resolved=388 errors=520 current=mypy/test/test_ref_info.py
+[2026-04-14T09:13:49Z] [iter=14] HEARTBEAT target_type=call_site elapsed_min=47.9 files_done=97 resolved=395 errors=532 current=mypy/typeshed/stdlib/_thread.pyi
+[2026-04-14T09:14:53Z] [iter=14] HEARTBEAT target_type=call_site elapsed_min=49.0 files_done=101 resolved=414 errors=545 current=mypyc/test/test_irbuild.py
+[2026-04-14T09:15:41Z] [iter=14] HEARTBEAT target_type=call_site elapsed_min=49.8 files_done=102 resolved=415 errors=555 current=mypy/typeshed/stdlib/binascii.pyi
+[2026-04-14T09:16:49Z] [iter=14] HEARTBEAT target_type=call_site elapsed_min=50.9 files_done=108 resolved=443 errors=569 current=mypy/typeshed/stdlib/_io.pyi
+[2026-04-14T09:17:43Z] [iter=14] HEARTBEAT target_type=call_site elapsed_min=51.8 files_done=113 resolved=457 errors=580 current=test-data/unit/fixtures/floatdict.pyi
+[2026-04-14T09:18:21Z] [iter=14] HEARTBEAT target_type=call_site elapsed_min=52.4 files_done=116 resolved=461 errors=588 current=mypy/typeshed/stdlib/_osx_support.pyi
+[2026-04-14T09:19:00Z] [iter=14] HEARTBEAT target_type=call_site elapsed_min=53.1 files_done=122 resolved=468 errors=596 current=mypy/typeshed/stdlib/fileinput.pyi
+[2026-04-14T09:19:58Z] [iter=14] HEARTBEAT target_type=call_site elapsed_min=54.1 files_done=128 resolved=496 errors=608 current=mypy/typeshed/stdlib/importlib/util.pyi
+[2026-04-14T09:20:37Z] [iter=14] HEARTBEAT target_type=call_site elapsed_min=54.7 files_done=136 resolved=521 errors=616 current=test-data/unit/lib-stub/attr/converters.pyi
+[2026-04-14T09:21:11Z] [iter=14] HEARTBEAT target_type=call_site elapsed_min=55.3 files_done=141 resolved=539 errors=623 current=mypy/__main__.py
+[2026-04-14T09:21:45Z] [iter=14] HEARTBEAT target_type=call_site elapsed_min=55.8 files_done=142 resolved=556 errors=630 current=mypy/typeshed/stdlib/turtle.pyi
+[2026-04-14T09:22:48Z] [iter=14] HEARTBEAT target_type=call_site elapsed_min=56.9 files_done=145 resolved=560 errors=643 current=mypy/typeshed/stdlib/http/client.pyi
+[2026-04-14T09:23:23Z] [iter=14] HEARTBEAT target_type=call_site elapsed_min=57.5 files_done=158 resolved=595 errors=650 current=test-data/unit/lib-stub/typing_extensions.pyi
+[2026-04-14T09:24:30Z] [iter=14] HEARTBEAT target_type=call_site elapsed_min=58.6 files_done=160 resolved=598 errors=664 current=test-data/unit/fixtures/exception.pyi
+[2026-04-14T09:25:33Z] [iter=14] HEARTBEAT target_type=call_site elapsed_min=59.6 files_done=163 resolved=609 errors=677 current=test-data/unit/plugins/callable_instance.py
+[2026-04-14T09:26:16Z] [iter=14] HEARTBEAT target_type=call_site elapsed_min=60.4 files_done=167 resolved=613 errors=686 current=test-data/unit/fixtures/type.pyi
+[2026-04-14T09:26:50Z] [iter=14] HEARTBEAT target_type=call_site elapsed_min=60.9 files_done=171 resolved=618 errors=693 current=mypy/typeshed/stdlib/datetime.pyi
+[2026-04-14T09:27:49Z] [iter=14] HEARTBEAT target_type=call_site elapsed_min=61.9 files_done=187 resolved=669 errors=705 current=test-data/packages/typedpkg/typedpkg/sample.py
+[2026-04-14T09:28:32Z] [iter=14] HEARTBEAT target_type=call_site elapsed_min=62.6 files_done=194 resolved=683 errors=714 current=mypy/typeshed/stdlib/tempfile.pyi
+[2026-04-14T09:29:11Z] [iter=14] HEARTBEAT target_type=call_site elapsed_min=63.3 files_done=208 resolved=705 errors=722 current=mypy/typeshed/stdlib/genericpath.pyi
+[2026-04-14T09:29:50Z] [iter=14] HEARTBEAT target_type=call_site elapsed_min=63.9 files_done=214 resolved=712 errors=730 current=mypy/typeshed/stubs/librt/librt/vecs.pyi
+[2026-04-14T09:30:24Z] [iter=14] HEARTBEAT target_type=call_site elapsed_min=64.5 files_done=224 resolved=737 errors=737 current=mypy/typeshed/stdlib/pdb.pyi
+[2026-04-14T09:30:59Z] [iter=14] HEARTBEAT target_type=call_site elapsed_min=65.1 files_done=239 resolved=777 errors=744 current=test-data/unit/plugins/attrhook.py
+[2026-04-14T09:31:34Z] [iter=14] HEARTBEAT target_type=call_site elapsed_min=65.6 files_done=301 resolved=864 errors=751 current=test-data/unit/plugins/class_attr_hook.py
+[2026-04-14T09:31:54Z] [iter=14] Target type resolved target_type=call_site resolved=900 errors=755 secs=3661 mem_mb=2403 MB
+[2026-04-14T09:31:54Z] [iter=14] Resolving target type target_type=import_statement count=6572
+[2026-04-14T09:32:04Z] [iter=14] HEARTBEAT target_type=import_statement elapsed_min=66.1 files_done=175 resolved=866 errors=0 current=mypy/typeshed/stdlib/spwd.pyi
+[2026-04-14T09:32:12Z] [iter=14] CHECKPOINT TRIGGERED elapsed_min=66.3 files_completed=878 new_files_this_iter=500 mem_mb=2412 MB
+[2026-04-14T09:32:12Z] [iter=14] Writing partial enrichment graph path=/home/runner/work/forx/forx/storage/aggregate/lsp/770d3ca4997032dc3a1c4f0b468e9f58e8f38505.nq.gz triples=309083
+[2026-04-14T09:32:19Z] [iter=14] Checkpoint written, exiting with code 7
+[2026-04-14T09:32:19Z] [iter=14] PHASE END: enrich (checkpointed) elapsed_s=3977 elapsed_min=66.3 files_completed=878
